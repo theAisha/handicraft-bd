@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+      "productName": {
+        "type": "string",
+        "description": "The name of the product"
+      },
+      "materialsUsed": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "List of materials used in the product"
+      },
+      "craftingMethod": {
+        "type": "string",
+        "description": "The crafting method used for the product"
+      },
+      "rating": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 5,
+        "description": "Rating of the product out of 5"
+      },
+      "isFavorite": {
+        "type": "boolean",
+        "description": "Indicates if the product is marked as a favorite"
+      }
+    },
+    "required": ["productName", "materialsUsed", "craftingMethod", "rating"],
+    "additionalProperties": false
+  }
+  

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handicraft Bangladesh</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <html data-theme="light">
+
+    </html>
+
+</head>
+
+<body class="container mx-auto px-4">
+    <!-- Navbar Start from here-->
+    <div class="navbar bg-base-200 rounded-xl mb-4">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>HOME</a></li>
+                    <li><a>SERVICE</a></li>
+                    <li><a>ABOUT US</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl font-bold">Handicrafts Bangladesh</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-medium">
+                <li><a class="nav-link" aria-current="page" href="#home">HOME</a></li>
+                <li><a class="nav-link" aria-current="page" href="#service">SERVICE</a></li>
+                <li><a class="nav-link" aria-current="page" href="#about">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-outline btn-info text-lg font-semibold" aria-current="page" href="#login">Sign Up</a>
+        </div>
+    </div>
+ <!-- home page start from here -->
+ <section class="pt-5" id="home">
+    <div class="hero min-h-screen rounded-lg"
+        style="background-image: url(https://img.freepik.com/free-photo/frame-from-plants-drawing-suplies_23-2147772349.jpg);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-7xl font-bold">Handicraft Business of Bangladesh</h1>
+                <p class="mb-5">The rich cultural heritage of Bangladesh by offering a curated collection of sustainable, handcrafted products made by skilled local artisans</p>
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn btn-info mx-3">Login</button>
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn btn-info mx-3">Registration</button>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between gap-6">
+            
+             
+        <!-- Login Form -->
+        <div class="w-full bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Login</h2>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-gray-700">Password</label>
+                    <input type="password" id="password" name="password" required
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <button type="submit"
+                        class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                    Login
+                </button>
+                <div class="text-center mt-6">
+                    <p class="text-gray-500">Or sign in with:</p>
+                    <div class="flex justify-between mt-4">
+                        <button type="button"
+                                class="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition-colors mr-2">
+                            Google
+                        </button>
+                        <button type="button"
+                                class="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 transition-colors ml-2">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="w-full bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Register</h2>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="reg-first name" class="block text-gray-700">First Name</label>
+                    <input type="name" id="reg-name" name="reg-name" required
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="reg-last name" class="block text-gray-700">Last Name</label>
+                    <input type="name" id="reg-name" name="reg-name" required
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="reg-email" class="block text-gray-700">Email</label>
+                    <input type="email" id="reg-email" name="reg-email" required
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="reg-password" class="block text-gray-700">Password</label>
+                    <input type="password" id="reg-password" name="reg-password" required
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label for="confirm-password" class="block text-gray-700">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <button type="submit"
+                        class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition-colors">
+                    Register
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Product Display Section -->
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold my-10 text-center">Our Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <!-- Product Card -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://www.boontoon.com/blog/wp-content/uploads/2017/03/40x40-cm-Handmade-3D-crochet-hook-Daisy-striped-pillow-case-Cashmere-knitted-flower-pillowcases-Handicraft-wedding.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">কুশিকাটার বালিশের কভার</h3>
+                        <p class="mt-2 text-gray-600">Materials: cotton</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand Embroidery</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/vase.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Painted Clay Vase</h3>
+                        <p class="mt-2 text-gray-600 ">Materials: Clay</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand Craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/bambo.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Bambo Bucket</h3>
+                        <p class="mt-2 text-gray-600">Materials: Bamboo</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat Product Card as needed -->
+                <!-- Example Card End -->
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <!-- Product Card -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/haatpakha.jpg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Haat Pakha</h3>
+                        <p class="mt-2 text-gray-600">Materials: Typically cotton</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand Embroidery</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/bagwool.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">কুশিকাটার ব্যাগ</h3>
+                        <p class="mt-2 text-gray-600 ">Materials: Wool</p>
+                        <p class="mt-1 text-gray-600">Crafting method: handy craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/woolen.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">কুশিকাটার ড্রেস</h3>
+                        <p class="mt-2 text-gray-600">Materials: Wool</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Handicraft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat Product Card as needed -->
+                <!-- Example Card End -->
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <!-- Product Card -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/rope.jpg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Rope vase</h3>
+                        <p class="mt-2 text-gray-600">Materials: Rope</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand Craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/lamp.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Hand made lamp</h3>
+                        <p class="mt-2 text-gray-600 ">Materials: Wood,Fabric,Paint</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/cup.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Wooden Cup</h3>
+                        <p class="mt-2 text-gray-600">Materials: Wood</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Handicraft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>    
+                <!-- Repeat Product Card as needed -->
+                <!-- Example Card End -->
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <!-- Product Card -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/elephent.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Elephent Showpiece</h3>
+                        <p class="mt-2 text-gray-600">Materials: Clay</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Pottery</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/pencilcase.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Wooden Pencil Case</h3>
+                        <p class="mt-2 text-gray-600 ">Materials: Wood</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/stand.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Wooden Stand</h3>
+                        <p class="mt-2 text-gray-600">Materials: Wood</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Woodwork</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+              
+        
+                <!-- Repeat Product Card as needed -->
+                <!-- Example Card End -->
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <!-- Product Card -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/photoframe.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Hand Crafted Photo Frame</h3>
+                        <p class="mt-2 text-gray-600">Materials: Wooden</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Woodwork</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/plate.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Painted Plate</h3>
+                        <p class="mt-2 text-gray-600 ">Materials: Clay,Paint</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/floormat.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Jute floormat</h3>
+                        <p class="mt-2 text-gray-600">Materials: Jute</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Jute craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+              
+        
+                <!-- Repeat Product Card as needed -->
+                <!-- Example Card End -->
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <!-- Product Card -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/nakshi.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Nakshi Katha</h3>
+                        <p class="mt-2 text-gray-600">Materials: Cloths,Trade</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand Craft </p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/Wallmate.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Wallmate</h3>
+                        <p class="mt-2 text-gray-600 ">Materials:Rope</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand Craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="img/jutebag.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold">Jute Bag</h3>
+                        <p class="mt-2 text-gray-600">Materials: Jute</p>
+                        <p class="mt-1 text-gray-600">Crafting method: Hand Craft</p>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-500">
+                                <!-- Example star rating, customize as needed -->
+                                ★★★★☆
+                            </span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <button class="text-blue-600 hover:underline">Favorite</button>
+                        </div>
+                    </div>
+                </div>
+              
+        
+                <!-- Repeat Product Card as needed -->
+                <!-- Example Card End -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
