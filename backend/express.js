@@ -8,8 +8,7 @@ app.use(express.static(__dirname));
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
-
-// Connect to MongoDB
+  
 mongoose.connect('mongodb://127.0.0.1:27017/handicrafts', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -21,16 +20,14 @@ db.once('open', () => {
   console.log('MongoDB connection successful');
 });
 
-// Define the schema and model for the 'userSignUp' collection
 const userSchema = new mongoose.Schema({
   userName: { type: String, unique: true },
   registerEmail: { type: String, unique: true },
   registerPassword: String,
 });
 
-const Users = mongoose.model('userSignUp', userSchema);
-
-// Registration route
+const Users = mongoose.model('userSignUp', userSchema);                                        
+  
 app.post('/register', async (req, res) => {
   const { userName, registerEmail, registerPassword } = req.body;
   try {
@@ -51,8 +48,7 @@ app.post('/register', async (req, res) => {
     res.status(500).send({ status: 'Registration unsuccessful', error: error.message });
   }
 });
-
-// Login route
+                                                              
 app.post('/login', async (req, res) => {
     const { userName, registerPassword } = req.body;
     try {
